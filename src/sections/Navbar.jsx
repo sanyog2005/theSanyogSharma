@@ -9,7 +9,7 @@ function Navigation() {
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#about">
+        <a className="nav-link" href="https://drive.google.com/file/d/1J_oCv7KYczldcxtRhLfFAMF05bCBswVn/view?usp=sharing">
           Download CV
         </a>
       </li>
