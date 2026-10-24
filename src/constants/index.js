@@ -205,9 +205,8 @@ export const myProjects = [
 export const mySocials = [
   {
     name: "LeetCode",
-    href: "",
+    href: "https://leetcode.com/u/sanyog_sharma/",
     icon: "/assets/logos/OIP.jpg",
-    
   },
   {
     name: "Linkedin",
@@ -223,58 +222,68 @@ export const mySocials = [
 ];
 
 export const experiences = [
-    {
-    title: "Web Dev Intern",
-    job: "HiSync , Ghaziabad",
-    date: "1 July to 31 July 2025",
+  {
+    title: "Software Engineer Intern",
+    job: "Hack2Skill - Noida, Delhi",
+    date: "May 2026",
     contents: [
-     " worked on a library management system"
+      "Architected and delivered 17 responsive web pages and optimized site-wide performance for 70+ pages by implementing image optimization, code splitting, and cache strategies",
+      "Integrated Supabase with a Next.js frontend to power a specialized AI-visibility application, ensuring efficient database querying and robust authentication flows.",
     ],
   },
   {
-    title: "Android Developer Intern",
-    job: "Poxo RFID Automation-Janakpuri east, Delhi",
-    date: "3 July to 8 Aug 2024"
-,
+    title: "SDE Intern",
+    job: "Infrasity - Janakpuri, Delhi",
+    date: "April 2026 – May 2026",
     contents: [
-        "Worked as an android Development intern and worked on a cafe management app"
-    ]   
-      },
-
+      "Architected and delivered 17 responsive web pages and optimized site-wide performance for 70+ pages by implementing image optimization, code splitting, and cache strategies, successfully boosting the PageSpeed Index to exceed 90.",
+      "Integrated Supabase with a Next.js frontend to power a specialized AI-visibility application, ensuring efficient database querying and robust authentication flows.",
+    ],
+  },
   {
-    title: "B-TECH",
-    job: "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
-    date: "2022-2026",
+    title: "Full Stack AI Developer",
+    job: "Web Loxic Private Limited - Azadpur, Delhi",
+    date: "Nov 2025 – March 2026",
     contents: [
-      "VIVEKANANDA INSTITUTE OF PROFESSIONAL STUDIES TECHNICAL",
-      "PURSUING (YEAR OF COMPLETION:EXPECTED 2026)",
+      "Feature Integrity & Pipelines: Integrated a secure payment gateway frontend with backend APIs, ensuring 99.9% data integrity for downstream predictive fraud detection",
+      "Developed a real-time Supply Chain Analytics dashboard in PostgreSQL, optimizing analytical query performance through advanced indexing to accelerate large-scale Exploratory Data Analysis (EDA).",
+    ],
+  },
+  {
+    title: "B-TECH IN ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
+    job: "GGSIP UNIVERSITY, DELHI",
+    date: "Expected 2026",
+    contents: [
+      "VIVEKANANDA INSTITUTE OF PROFESSIONAL STUDIES TECHNICAL CAMPUS, PITAMPURA, OUTER RING ROAD",
+      "PURSUING (YEAR OF COMPLETION: EXPECTED 2026)",
     ],
   },
 ];
+
 export const reviews = [
   {
-    name: "Hackathon",
-    username: "Runner up at Nebula Net [MAIT]",
-    body: " Our project: Cosmos theme & the problem statement were given by the organizers 🚀",
+    name: "Runner Up",
+    username: "Nebula Net [MAIT]",
+    body: "Runner Up at Nebula Net (MAIT) Hackathon. Created Orbit Ways project under the Cosmos theme & problem statement given by the organizers 🚀",
     img: "https://robohash.org/jack",
   },
   {
-    name: "Hackathon",
-    username: "Finalist VIHAAN 007 [DTU]",
-    body: "Exhilarating journey at the Vihaan007 hackathon hosted by IEEE DTU on April 12-13! 🌟 We're thrilled to share that we not only participated but also successfully",
+    name: "LeetCode Milestone",
+    username: "300+ Solved & SQL 50 Badge",
+    body: "Solved 300+ problems on LeetCode across Data Structures & Algorithms, and earned the SQL 50 badge demonstrating advanced database query proficiency.",
+    img: "https://robohash.org/leetcode",
+  },
+  {
+    name: "Finalist",
+    username: "VIHAAN 007 [DTU]",
+    body: "Exhilarating journey at the Vihaan007 hackathon hosted by IEEE DTU on April 12-13! 🌟 Successfully participated and became a national finalist.",
     img: "https://robohash.org/jill",
   },
   {
-    name: "Hackathon",
-    username: "Finalist HACKAZARDS [BPIT]",
-    body: "During the hackathon, we dedicated ourselves to crafting a groundbreaking solution: Smart and Effective Real-Time Management of Parking",
+    name: "Finalist",
+    username: "HACKAZARDS [BPIT]",
+    body: "During the hackathon, crafted ParkKing: Smart and Effective Real-Time Management of Parking with Python-based vehicle OCR recognition.",
     img: "https://robohash.org/john",
-  },
-  {
-    name: "Hackathon",
-    username: "Participant at HACK THE CRISIS [NSIT]",
-    body: "While hackathons can be challenging, they're an incredible way to boost productivity and focus. ",
-    img: "https://robohash.org/alice",
   },
   {
     name: "Open Source Contributor",
@@ -283,10 +292,100 @@ export const reviews = [
     img: "https://robohash.org/bob",
   },
   {
-    name: "Hackathon",
+    name: "Finalist",
     username: "Code4Cause 2024 [NSUT]",
-    body: "wrapped up an unforgettable journey at Code4Cause 2024, a 30-hour hackathon organized by HackwithIndia at Netaji Subhas Institute of Technology",
+    body: "Wrapped up an unforgettable journey at Code4Cause 2024, a 30-hour hackathon organized by HackwithIndia at Netaji Subhas Institute of Technology",
     img: "https://robohash.org/charlie",
   },
- 
+];
+
+export const techStackCategories = [
+  {
+    category: "Backend & Distributed Systems",
+    tagline: "High-throughput APIs, authentication flows & microservices architecture",
+    skills: [
+      { name: "Node.js (Express)", icon: "/assets/logos/nodejs.svg" },
+      { name: "Python (FastAPI)", icon: "/assets/logos/fastapi.svg" },
+      { name: "RESTful APIs", icon: "" },
+      { name: "Supabase", icon: "/assets/logos/supabase.svg" },
+      { name: "Rate Limiting", icon: "" },
+      { name: "JWT Auth", icon: "" },
+      { name: "System Design", icon: "" },
+      { name: "Cloud Integrations", icon: "" },
+    ],
+    colSpan: "col-span-12 lg:col-span-7",
+    badge: "Core Architecture",
+  },
+  {
+    category: "AI, ML & Computer Vision",
+    tagline: "Deep learning models, natural language & computer vision pipelines",
+    skills: [
+      { name: "PyTorch", icon: "/assets/logos/pytorch.svg" },
+      { name: "Deep Learning", icon: "" },
+      { name: "NLP", icon: "" },
+      { name: "MediaPipe", icon: "" },
+      { name: "OpenCV", icon: "" },
+      { name: "Vehicle Recognition (OCR)", icon: "" },
+    ],
+    colSpan: "col-span-12 lg:col-span-5",
+    badge: "Applied AI",
+  },
+  {
+    category: "Core Languages",
+    tagline: "Multi-paradigm languages for scalable applications & data algorithms",
+    skills: [
+      { name: "Python", icon: "/assets/logos/python.svg" },
+      { name: "SQL (PostgreSQL, MySQL)", icon: "/assets/logos/postgresql.svg" },
+      { name: "Java", icon: "/assets/images/java.png" },
+      { name: "JavaScript", icon: "/assets/logos/javascript.svg" },
+      { name: "HTML5", icon: "/assets/logos/html5.svg" },
+      { name: "CSS3", icon: "/assets/logos/css3.svg" },
+    ],
+    colSpan: "col-span-12 md:col-span-5 lg:col-span-5",
+    badge: "Polyglot",
+  },
+  {
+    category: "Databases & Storage",
+    tagline: "Relational architectures, advanced indexing & analytical query optimization",
+    skills: [
+      { name: "PostgreSQL", icon: "/assets/logos/postgresql.svg" },
+      { name: "MySQL", icon: "" },
+      { name: "MongoDB", icon: "/assets/logos/mongodb.svg" },
+      { name: "SQLite", icon: "/assets/logos/sqlite.svg" },
+      { name: "Advanced Indexing", icon: "" },
+      { name: "Query Optimization", icon: "" },
+      { name: "Data Modelling", icon: "" },
+    ],
+    colSpan: "col-span-12 md:col-span-7 lg:col-span-7",
+    badge: "SQL 50 Badge",
+  },
+  {
+    category: "DevOps & Cloud Infrastructure",
+    tagline: "Containerization, cloud deployments & developer workflows",
+    skills: [
+      { name: "Docker", icon: "/assets/logos/docker.svg" },
+      { name: "AWS", icon: "/assets/logos/aws.svg" },
+      { name: "Git / GitHub", icon: "/assets/logos/git.svg" },
+      { name: "Postman", icon: "" },
+      { name: "Vercel", icon: "" },
+      { name: "Render", icon: "" },
+    ],
+    colSpan: "col-span-12 md:col-span-7 lg:col-span-7",
+    badge: "Infrastructure",
+  },
+  {
+    category: "Automation, Scraping & Analytics",
+    tagline: "Stealth browser automation, data aggregation & business intelligence",
+    skills: [
+      { name: "Playwright", icon: "" },
+      { name: "Appium", icon: "" },
+      { name: "Beautiful Soup", icon: "" },
+      { name: "Serp API", icon: "" },
+      { name: "Power BI", icon: "" },
+      { name: "Tableau", icon: "" },
+      { name: "Large-scale EDA", icon: "" },
+    ],
+    colSpan: "col-span-12 md:col-span-5 lg:col-span-5",
+    badge: "Data Pipelines",
+  },
 ];

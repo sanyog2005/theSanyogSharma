@@ -1,39 +1,41 @@
 import { OrbitingCircles } from "./OrbitingCircles";
 
 export function Frameworks() {
-  const skills = [
-    "auth0",
-    "blazor",
- 
-
-    "css3",
-
-    "git",
-    "html5",
-    "javascript",
-    "microsoft",
+  const outerSkills = [
+    "python",
+    "nodejs",
+    "fastapi",
+    "docker",
+    "postgresql",
+    "aws",
+    "pytorch",
+  ];
+  const innerSkills = [
     "react",
-    "sqlite",
+    "javascript",
+    "supabase",
+    "mongodb",
     "tailwindcss",
-    "vitejs",
-    "wordpress",
+    "git",
   ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">
-      <OrbitingCircles iconSize={40}>
-        {skills.map((skill, index) => (
-          <Icon key={index} src={`assets/logos/${skill}.svg`} />
+      <OrbitingCircles iconSize={38} radius={135} duration={35}>
+        {outerSkills.map((skill, index) => (
+          <Icon key={`outer-${index}`} src={`/assets/logos/${skill}.svg`} alt={skill} />
         ))}
       </OrbitingCircles>
-      <OrbitingCircles iconSize={25} radius={100} reverse speed={2}>
-        {skills.reverse().map((skill, index) => (
-          <Icon key={index} src={`assets/logos/${skill}.svg`} />
+      <OrbitingCircles iconSize={30} radius={85} reverse duration={25}>
+        {innerSkills.map((skill, index) => (
+          <Icon key={`inner-${index}`} src={`/assets/logos/${skill}.svg`} alt={skill} />
         ))}
       </OrbitingCircles>
     </div>
   );
 }
 
-const Icon = ({ src }) => (
-  <img src={src} className="duration-200 rounded-sm hover:scale-110" />
+const Icon = ({ src, alt }) => (
+  <div className="flex items-center justify-center p-1.5 transition-transform duration-200 border rounded-full shadow-lg bg-midnight/90 border-white/10 hover:scale-125">
+    <img src={src} alt={alt} className="object-contain size-6" />
+  </div>
 );

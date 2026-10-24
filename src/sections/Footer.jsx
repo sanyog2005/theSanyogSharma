@@ -1,22 +1,37 @@
 import { mySocials } from "../constants";
+
 const Footer = () => {
   return (
-    <section className="flex flex-wrap items-center justify-between gap-5 pb-3 text-sm text-neutral-400 c-space">
-      <div className="mb-1 bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
-      <div className="flex gap-2">
-        <p>Terms & Conditions</p>
-        <p>|</p>
-        <p>Privacy Policy</p>
+    <footer className="flex flex-wrap items-center justify-between gap-5 py-8 text-sm text-neutral-400 c-space border-t border-neutral-800 mt-20">
+      <div className="flex flex-col sm:flex-row items-center gap-2">
+        <p className="font-semibold text-white">Sanyog Sharma</p>
+        <span className="hidden sm:inline">|</span>
+        <p className="text-xs text-neutral-400">Backend & Full-Stack Developer</p>
       </div>
-      <div className="flex gap-3">
+
+      <div className="flex items-center gap-4">
         {mySocials.map((social, index) => (
-          <a href={social.href} key={index}>
-            <img src={social.icon} className="w-10 h-10 bg-blue-400" alt={social.name} />
+          <a
+            href={social.href}
+            key={index}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={`${social.name} - ${social.detail || ''}`}
+            className="flex items-center justify-center p-2 rounded-xl bg-midnight border border-white/10 hover:border-lavender/60 hover:bg-royal/20 transition-all hover:-translate-y-1"
+          >
+            <img
+              src={social.icon}
+              className="w-5 h-5 object-contain"
+              alt={social.name}
+            />
           </a>
         ))}
       </div>
-      <p>© 2025 sanyog. All rights reserved.</p>
-    </section>
+
+      <p className="text-xs text-neutral-500">
+        © {new Date().getFullYear()} Sanyog Sharma. All rights reserved.
+      </p>
+    </footer>
   );
 };
 
